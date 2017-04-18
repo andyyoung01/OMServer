@@ -1,0 +1,215 @@
+[2017-04-17 16:33:41,578] ERROR : Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/core/handlers/base.py", line 101, in get_response
+    request.path_info)
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/core/urlresolvers.py", line 298, in resolve
+    for pattern in self.url_patterns:
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/core/urlresolvers.py", line 328, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/core/urlresolvers.py", line 323, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/yangdong/OMserverweb/OMserverweb/urls.py", line 17, in <module>
+    url(r'^demo/', include('demo.urls')),
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 24, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+ImportError: No module named demo.urls
+[2017-04-17 16:33:42,322] ERROR : Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/core/handlers/base.py", line 89, in get_response
+    response = middleware_method(request)
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/middleware/common.py", line 67, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/core/urlresolvers.py", line 531, in is_valid_path
+    resolve(path, urlconf)
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/core/urlresolvers.py", line 420, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/core/urlresolvers.py", line 298, in resolve
+    for pattern in self.url_patterns:
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/core/urlresolvers.py", line 328, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/core/urlresolvers.py", line 323, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/yangdong/OMserverweb/OMserverweb/urls.py", line 17, in <module>
+    url(r'^demo/', include('demo.urls')),
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 24, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+ImportError: No module named demo.urls
+[2017-04-17 16:45:30,502] WARNING : Not Found: /favicon.ico
+[2017-04-17 17:07:49,402] ERROR : Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/core/handlers/base.py", line 101, in get_response
+    request.path_info)
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/core/urlresolvers.py", line 298, in resolve
+    for pattern in self.url_patterns:
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/core/urlresolvers.py", line 328, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/core/urlresolvers.py", line 323, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/yangdong/OMserverweb/OMserverweb/urls.py", line 20, in <module>
+    url(r'^$',include('autoadmin.ruls')),
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 24, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+ImportError: No module named ruls
+[2017-04-17 17:17:24,514] ERROR : Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/yangdong/OMserverweb/autoadmin/views.py", line 32, in index
+    return render_to_response('autoadmin/main.html',res_template_dist)
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 20, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/template/loader.py", line 169, in render_to_string
+    t = get_template(template_name)
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/template/loader.py", line 145, in get_template
+    template, origin = find_template(template_name)
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/template/loader.py", line 138, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: autoadmin/main.html
+[2017-04-18 14:23:29,086] WARNING : Not Found: /favicon.ico
+[2017-04-18 15:48:18,511] ERROR : Internal Server Error: /autoadmin/module_run/
+Traceback (most recent call last):
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/yangdong/OMserverweb/autoadmin/views.py", line 168, in module_run
+    OPresult=tdecode(conn.root.Runcommands(put_string),settings.SECRET_KEY)
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/rpyc/core/netref.py", line 196, in __call__
+    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/rpyc/core/netref.py", line 71, in syncreq
+    return conn.sync_request(handler, oid, *args)
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/rpyc/core/protocol.py", line 441, in sync_request
+    raise obj
+AttributeError: 'ManagerService' object has no attribute 'ModuleID'
+
+========= Remote Traceback (1) =========
+Traceback (most recent call last):
+  File "/home/yangdong/rpyc/lib/python2.7/site-packages/rpyc/core/protocol.py", line 305, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/home/yangdong/rpyc/lib/python2.7/site-packages/rpyc/core/protocol.py", line 535, in _handle_call
+    return self._local_objects[oid](*args, **dict(kwargs))
+  File "OMserver.py", line 46, in exposed_Runcommands
+    print(self.ModuleID)
+AttributeError: 'ManagerService' object has no attribute 'ModuleID'
+
+[2017-04-18 15:51:27,122] ERROR : Internal Server Error: /autoadmin/module_run/
+Traceback (most recent call last):
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/yangdong/OMserverweb/autoadmin/views.py", line 168, in module_run
+    OPresult=tdecode(conn.root.Runcommands(put_string),settings.SECRET_KEY)
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/rpyc/core/netref.py", line 196, in __call__
+    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/rpyc/core/netref.py", line 71, in syncreq
+    return conn.sync_request(handler, oid, *args)
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/rpyc/core/protocol.py", line 441, in sync_request
+    raise obj
+AttributeError: 'ManagerService' object has no attribute 'ModuleID'
+
+========= Remote Traceback (1) =========
+Traceback (most recent call last):
+  File "/home/yangdong/rpyc/lib/python2.7/site-packages/rpyc/core/protocol.py", line 305, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/home/yangdong/rpyc/lib/python2.7/site-packages/rpyc/core/protocol.py", line 535, in _handle_call
+    return self._local_objects[oid](*args, **dict(kwargs))
+  File "OMserver.py", line 46, in exposed_Runcommands
+    print(self.ModuleID)
+AttributeError: 'ManagerService' object has no attribute 'ModuleID'
+
+[2017-04-18 15:54:03,876] ERROR : Internal Server Error: /autoadmin/module_run/
+Traceback (most recent call last):
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/yangdong/OMserverweb/autoadmin/views.py", line 170, in module_run
+    OPresult=tdecode(conn.root.Runcommands(put_string),settings.SECRET_KEY)
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/rpyc/core/netref.py", line 196, in __call__
+    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/rpyc/core/netref.py", line 71, in syncreq
+    return conn.sync_request(handler, oid, *args)
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/rpyc/core/protocol.py", line 441, in sync_request
+    raise obj
+AttributeError: 'ManagerService' object has no attribute 'ModuleID'
+
+========= Remote Traceback (1) =========
+Traceback (most recent call last):
+  File "/home/yangdong/rpyc/lib/python2.7/site-packages/rpyc/core/protocol.py", line 305, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/home/yangdong/rpyc/lib/python2.7/site-packages/rpyc/core/protocol.py", line 535, in _handle_call
+    return self._local_objects[oid](*args, **dict(kwargs))
+  File "OMserver.py", line 46, in exposed_Runcommands
+    print(self.ModuleID)
+AttributeError: 'ManagerService' object has no attribute 'ModuleID'
+
+[2017-04-18 15:56:34,219] INFO : 1003@@192.168.71.167*sn2013-08-020@@
+[2017-04-18 15:56:34,257] ERROR : Internal Server Error: /autoadmin/module_run/
+Traceback (most recent call last):
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/yangdong/OMserverweb/autoadmin/views.py", line 170, in module_run
+    OPresult=tdecode(conn.root.Runcommands(put_string),settings.SECRET_KEY)
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/rpyc/core/netref.py", line 196, in __call__
+    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/rpyc/core/netref.py", line 71, in syncreq
+    return conn.sync_request(handler, oid, *args)
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/rpyc/core/protocol.py", line 441, in sync_request
+    raise obj
+AttributeError: 'ManagerService' object has no attribute 'ModuleID'
+
+========= Remote Traceback (1) =========
+Traceback (most recent call last):
+  File "/home/yangdong/rpyc/lib/python2.7/site-packages/rpyc/core/protocol.py", line 305, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/home/yangdong/rpyc/lib/python2.7/site-packages/rpyc/core/protocol.py", line 535, in _handle_call
+    return self._local_objects[oid](*args, **dict(kwargs))
+  File "OMserver.py", line 46, in exposed_Runcommands
+    print(self.ModuleID)
+AttributeError: 'ManagerService' object has no attribute 'ModuleID'
+
+[2017-04-18 16:00:01,226] INFO : 1003@@192.168.71.167*sn2013-08-020@@
+[2017-04-18 16:00:01,242] ERROR : Internal Server Error: /autoadmin/module_run/
+Traceback (most recent call last):
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/yangdong/OMserverweb/autoadmin/views.py", line 170, in module_run
+    OPresult=tdecode(conn.root.Runcommands(put_string),settings.SECRET_KEY)
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/rpyc/core/netref.py", line 196, in __call__
+    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/rpyc/core/netref.py", line 71, in syncreq
+    return conn.sync_request(handler, oid, *args)
+  File "/home/yangdong/python_env/py275_django/lib/python2.7/site-packages/rpyc/core/protocol.py", line 441, in sync_request
+    raise obj
+NameError: name 'ModuleID' is not defined
+
+========= Remote Traceback (1) =========
+Traceback (most recent call last):
+  File "/home/yangdong/rpyc/lib/python2.7/site-packages/rpyc/core/protocol.py", line 305, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/home/yangdong/rpyc/lib/python2.7/site-packages/rpyc/core/protocol.py", line 535, in _handle_call
+    return self._local_objects[oid](*args, **dict(kwargs))
+  File "OMserver.py", line 46, in exposed_Runcommands
+    print(ModuleID)
+NameError: name 'ModuleID' is not defined
+
+[2017-04-18 16:02:54,724] INFO : 1003@@192.168.71.167*sn2013-08-020@@
+[2017-04-18 16:07:07,513] INFO : 1003@@192.168.71.167*sn2013-08-020@@
+[2017-04-18 16:09:02,669] INFO : 1003@@192.168.71.167*sn2013-08-020@@
+[2017-04-18 16:13:20,267] INFO : 1003@@192.168.71.167*sn2013-08-020@@
+[2017-04-18 16:15:28,547] INFO : 1003@@192.168.71.167*sn2013-08-020@@
+[2017-04-18 16:19:33,518] INFO : 1003@@192.168.71.167*sn2013-08-020@@
+[2017-04-18 16:30:47,245] INFO : 1003@@192.168.71.167*sn2013-08-020@@
+[2017-04-18 16:53:24,602] ERROR : connect rpyc server error:[Errno 111] Connection refused
+[2017-04-18 17:10:09,955] ERROR : connect rpyc server error:[Errno 111] Connection refused
+[2017-04-18 17:12:40,188] ERROR : connect rpyc server error:[Errno 111] Connection refused
+[2017-04-18 17:13:21,767] INFO : 192.168.71.131
+[2017-04-18 17:13:21,768] ERROR : connect rpyc server error:[Errno 111] Connection refused
+[2017-04-18 17:14:00,052] INFO : 192.168.71.167
