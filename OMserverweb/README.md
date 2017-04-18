@@ -1,0 +1,1 @@
+需要修改config.py中，RPYC_SERVER的值为rpyc主控端的IP地址
