@@ -6,4 +6,4 @@
 + SQL - OMServer平台数据库结构
 
 对OMserverweb的目录结构进行了调整，修改了部分配置文件，使程序可以正常运行。
-最初的源代码文件出自https://github.com/yorkoliu/pyauto/tree/master/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0
+最初的源代码文件出自https://github.com/yorkoliu/pyauto/tree/master/第十三章
